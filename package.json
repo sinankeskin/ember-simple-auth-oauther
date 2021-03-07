@@ -27,8 +27,7 @@
   },
   "dependencies": {
     "ember-cli-babel": "^7.23.1",
-    "ember-cli-htmlbars": "^5.6.3",
-    "ember-get-config": "^0.2.4",
+    "ember-get-config": "^0.3.0",
     "ember-simple-auth-token": "^5.2.1"
   },
   "devDependencies": {
@@ -41,6 +40,7 @@
     "ember-auto-import": "^1.10.1",
     "ember-cli": "~3.25.2",
     "ember-cli-dependency-checker": "^3.2.0",
+    "ember-cli-htmlbars": "^5.6.3",
     "ember-cli-inject-live-reload": "^2.0.2",
     "ember-cli-sri": "^2.1.1",
     "ember-cli-terser": "^4.0.1",

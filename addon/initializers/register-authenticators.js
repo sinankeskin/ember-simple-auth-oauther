@@ -1,6 +1,6 @@
-import OAutherAuthenticator from 'ember-simple-auth-token/authenticators/oauther';
-import OAutherJWTAuthenticator from 'ember-simple-auth-token/authenticators/oauther-jwt';
-import OAutherTokenAuthenticator from 'ember-simple-auth-token/authenticators/oauther-token';
+import OAutherAuthenticator from 'ember-simple-auth-oauther/authenticators/oauther';
+import OAutherJWTAuthenticator from 'ember-simple-auth-oauther/authenticators/oauther-jwt';
+import OAutherTokenAuthenticator from 'ember-simple-auth-oauther/authenticators/oauther-token';
 
 export function initialize(application) {
   application.register('authenticator:oauther', OAutherAuthenticator);
