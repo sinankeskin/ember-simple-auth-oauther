@@ -1,6 +1,8 @@
 import BaseAuthenticator from 'ember-simple-auth/authenticators/base';
+import { assert } from '@ember/debug';
 import { assign } from '@ember/polyfills';
 import config from 'ember-get-config';
+import { isPresent } from '@ember/utils';
 import { reject } from 'rsvp';
 
 export default class OAutherAuthenticator extends BaseAuthenticator {
@@ -13,6 +15,11 @@ export default class OAutherAuthenticator extends BaseAuthenticator {
   }
 
   async authenticate(params, headers) {
+    assert(
+      'userInformationEndpoint config not found.',
+      isPresent(this.userInformationEndpoint)
+    );
+
     const response = await this.makeRequest(
       this.userInformationEndpoint,
       params,

@@ -1,9 +1,11 @@
 import JWTAuthenticator from 'ember-simple-auth-token/authenticators/jwt';
+import classic from 'ember-classic-decorator';
 import config from 'ember-get-config';
 
+@classic
 export default class OAutherJWTAuthenticator extends JWTAuthenticator {
-  constructor() {
-    super(...arguments);
+  init() {
+    super.init(...arguments);
 
     const conf = config['ember-simple-auth-oauther'] || {};
     this.tokenDataPropertyName = conf.tokenDataPropertyName || 'tokenData';
