@@ -1,8 +1,7 @@
+/* eslint-disable ember/classic-decorator-hooks */
 import TokenAuthenticator from 'ember-simple-auth-token/authenticators/token';
-import classic from 'ember-classic-decorator';
 import config from 'ember-get-config';
 
-@classic
 export default class OAutherTokenAuthenticator extends TokenAuthenticator {
   init() {
     super.init(...arguments);

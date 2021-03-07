@@ -1,8 +1,7 @@
+/* eslint-disable ember/classic-decorator-hooks */
 import JWTAuthenticator from 'ember-simple-auth-token/authenticators/jwt';
-import classic from 'ember-classic-decorator';
 import config from 'ember-get-config';
 
-@classic
 export default class OAutherJWTAuthenticator extends JWTAuthenticator {
   init() {
     super.init(...arguments);

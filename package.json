@@ -26,7 +26,6 @@
     "test:ember-compatibility": "ember try:each"
   },
   "dependencies": {
-    "ember-classic-decorator": "^2.0.0",
     "ember-cli-babel": "^7.23.1",
     "ember-get-config": "^0.3.0",
     "ember-simple-auth-token": "^5.2.1"
@@ -75,8 +74,5 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
-  },
-  "peerDependencies": {
-    "@embroider/macros": "^0.36.0"
   }
 }
