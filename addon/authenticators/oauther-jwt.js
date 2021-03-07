@@ -7,6 +7,7 @@ export default class OAutherJWTAuthenticator extends JWTAuthenticator {
     super.init(...arguments);
 
     const conf = config['ember-simple-auth-oauther'] || {};
+    this.serverTokenEndpoint = conf.serverTokenEndpoint || '/api/token-auth/';
     this.tokenDataPropertyName = conf.tokenDataPropertyName || 'tokenData';
     this.refreshAccessTokens =
       conf.refreshAccessTokens === false ? false : true;
@@ -18,5 +19,6 @@ export default class OAutherJWTAuthenticator extends JWTAuthenticator {
       conf.refreshTokenPropertyName || 'refresh_token';
     this.tokenExpireName = conf.tokenExpireName || 'exp';
     this.refreshLeeway = conf.refreshLeeway || 0;
+    this.headers = conf.headers || {};
   }
 }
