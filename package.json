@@ -75,5 +75,8 @@
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "peerDependencies": {
+    "@embroider/macros": "^0.36.0"
   }
 }
