@@ -1,13 +1,15 @@
 {
   "name": "ember-simple-auth-oauther",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "This is a complementary addon for ember-oauther.",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "oauth",
+    "simple auth"
   ],
-  "repository": "",
+  "repository": "https://github.com/sinankeskin/ember-simple-auth-oauther",
   "license": "MIT",
-  "author": "",
+  "author": "Sinan Keskin <sinan@kesk.in> (https://kesk.in)",
   "directories": {
     "doc": "doc",
     "test": "tests"
