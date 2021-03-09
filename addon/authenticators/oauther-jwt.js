@@ -1,10 +1,13 @@
 /* eslint-disable ember/classic-decorator-hooks */
 import JWTAuthenticator from 'ember-simple-auth-token/authenticators/jwt';
-import config from 'ember-get-config';
+import { getOwner } from '@ember/application';
 
 export default class OAutherJWTAuthenticator extends JWTAuthenticator {
   init() {
     super.init(...arguments);
+
+    const config =
+      getOwner(this).resolveRegistration('config:environment') || {};
 
     const conf = config['ember-simple-auth-oauther'] || {};
     this.serverTokenEndpoint = conf.serverTokenEndpoint || '/api/token-auth/';

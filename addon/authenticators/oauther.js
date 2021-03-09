@@ -1,13 +1,16 @@
 import BaseAuthenticator from 'ember-simple-auth/authenticators/base';
 import { assert } from '@ember/debug';
 import { assign } from '@ember/polyfills';
-import config from 'ember-get-config';
+import { getOwner } from '@ember/application';
 import { isPresent } from '@ember/utils';
 import { reject } from 'rsvp';
 
 export default class OAutherAuthenticator extends BaseAuthenticator {
   constructor() {
     super(...arguments);
+
+    const config =
+      getOwner(this).resolveRegistration('config:environment') || {};
 
     const conf = config['ember-simple-auth-oauther'] || {};
     this.userInformationEndpoint = conf.userInformationEndpoint;
