@@ -18,7 +18,7 @@ ember install ember-simple-auth-oauther
 
 There are 3 authenticators.
 
-1. oauther: For whatever you returned.
+1. oauther: For whatever you return json data.
 2. oauther-token: For same token logic with [ember-simple-auth-token](https://github.com/jpadilla/ember-simple-auth-token)
 3. oauther-jwt: For same jwt logic with [ember-simple-auth-token](https://github.com/jpadilla/ember-simple-auth-token)
 
