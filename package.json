@@ -1,6 +1,6 @@
 {
   "name": "ember-simple-auth-oauther",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "description": "This is a complementary addon for ember-oauther.",
   "keywords": [
     "ember-addon",
